@@ -1,0 +1,2 @@
+
+ALTER TABLE recepcionistas ADD COLUMN is_ativo BOOLEAN DEFAULT 1;
