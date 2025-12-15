@@ -1,9 +1,25 @@
-"d1_databases": [
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "villa-tapi-app",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2025-06-17",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "assets": {
+    "directory": "dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
     {
       "binding": "DB",
       "database_name": "villa-tapi-db",
-      "database_id": "34c26804-1fa9-48ac-8dea-30071a8b2b05
-"
+      "database_id": "34c26804-1fa9-48ac-8dea-30071a8b2b05"
     }
   ],
   "r2_buckets": [
@@ -12,3 +28,4 @@
       "bucket_name": "villa-tapi-files"
     }
   ]
+}
