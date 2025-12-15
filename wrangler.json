@@ -1,31 +1,13 @@
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "019acddd-32ef-7bc8-a83c-d52d86352c3d",
-  "main": "./src/worker/index.ts",
-  "compatibility_date": "2025-06-17",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "observability": {
-    "enabled": true
-  },
-  "upload_source_maps": true,
-  "assets": {
-    "directory": "dist",
-    "binding": "ASSETS",
-    "not_found_handling": "single-page-application"
-  },
-  "d1_databases": [
+"d1_databases": [
     {
       "binding": "DB",
-      "database_name": "019acddd-32ef-7bc8-a83c-d52d86352c3d",
-      "database_id": "019acddd-32ef-7bc8-a83c-d52d86352c3d"
+      "database_name": "villa-tapi-db",
+      "database_id": "PEGAR_AQUI_EL_ID_QUE_COPIASTE_EN_PASO_1"
     }
   ],
   "r2_buckets": [
     {
       "binding": "R2_BUCKET",
-      "bucket_name": "019acddd-32ef-7bc8-a83c-d52d86352c3d"
+      "bucket_name": "villa-tapi-files"
     }
   ]
-}
