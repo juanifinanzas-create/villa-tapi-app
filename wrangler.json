@@ -3,12 +3,16 @@
   "name": "019acddd-32ef-7bc8-a83c-d52d86352c3d",
   "main": "./src/worker/index.ts",
   "compatibility_date": "2025-06-17",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "observability": {
     "enabled": true
   },
   "upload_source_maps": true,
   "assets": {
+    "directory": "dist",
+    "binding": "ASSETS",
     "not_found_handling": "single-page-application"
   },
   "d1_databases": [
